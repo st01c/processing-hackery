@@ -18,6 +18,7 @@ void setup() {
 }
 
 void draw() {
+
   background(colorR, colorB, colorG);
   jiggleZoog(1);
 
@@ -25,8 +26,9 @@ void draw() {
   if (mouseX >= x - 10 && mouseX <= x + 10 && mouseY >= y - 50 && mouseY <= y +50) {
     background(255);
   }
-  drawZoog();
-
+  
+    drawZoog();
+  
   // color changes definitions
   colorR = colorR + colorRc*random(0, 5);
   colorB = colorB + colorBc*random(0, 5);
